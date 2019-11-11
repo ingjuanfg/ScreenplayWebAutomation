@@ -13,8 +13,7 @@ import static co.com.ingjuanfg.user_interface.YoutubePage.CAMPO_BUSQUEDA_YOUTUBE
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class Buscar implements Task {
-
-    Video video;
+    private Video video;
 
     public Buscar(Video video){
         this.video = video;

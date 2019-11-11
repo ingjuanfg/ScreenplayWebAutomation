@@ -19,13 +19,17 @@ public class PruebaAutomatizacionStepDefinition {
 
     @Cuando("^Juan imprime la info del datatable$")
     public void juanImprime(DataTable infoUsuario) {
-        List<Map<String,String>> informacion = infoUsuario.asMaps(String.class, String.class);
-
+        List<Map<String, String>> informacion = infoUsuario.asMaps(String.class, String.class);
+        for (int i = 0; i < informacion.size(); i++) {
+            System.out.println(informacion.get(i).get("apellido"));
+            System.out.println(informacion.get(i).get("direccion"));
+            System.out.println(informacion.get(i).get("telefono"));
+            System.out.println(informacion.get(i).get("marca"));
+        }
     }
 
     @Entonces("^el deberia de ver la info$")
     public void elDeberiaDeVerSuApellidoEnConsola() {
         System.out.println("Estoy en el entonces");
     }
-
 }

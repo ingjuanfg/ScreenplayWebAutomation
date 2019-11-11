@@ -5,6 +5,6 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class GooglePage extends PageObject {
-    public static final Target CAJONES_APPS_GOOGLE = Target.the("Cajones de Apps de Google").located(By.xpath("//a[@class='gb_x gb_Vb']"));
+    public static final Target CAJONES_APPS_GOOGLE = Target.the("Cajones de Apps de Google").located(By.xpath("//a[@title='Aplicaciones de Google']"));
     public static final Target OPCION_APP_GOOGLE = Target.the("Apps de Google").locatedBy("//span[contains(.,'{0}')]");
 }

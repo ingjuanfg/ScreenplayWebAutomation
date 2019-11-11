@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/buscar_video_youtube.feature",
-        glue = "co.com.todo1.stepdefinitions",
+        features = "src/test/resources/features/google/buscar_video_youtube.feature",
+        glue = "co.com.ingjuanfg.stepdefinitions",
         snippets = SnippetType.CAMELCASE
 )
 public class BuscarVideoYoutubeRunner {
